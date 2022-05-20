@@ -1,0 +1,20 @@
+server:
+  port: 8181
+  servlet:
+    context-path: /
+
+cloud:
+  aws:
+    credentials:
+      accessKey:
+      secretKey:
+      instanceProfile: false
+      useDefaultAwsCredentialsChain: true
+    region:
+      static: ap-south-1
+    stack:
+      auto: false
+
+queue:
+#  payment: payment-updates
+  payment: payment-queue
